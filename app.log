@@ -328,3 +328,226 @@ Caused by: java.net.SocketTimeoutException: Read timed out
 	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:540)
 	... 18 common frames omitted
 
+2021-07-08 13:03:46.144  INFO 5868 --- [main] c.z.j.j.JavaJenkinsApplication           : Starting JavaJenkinsApplication using Java 1.8.0_191 on SC-201811221926 with PID 5868 (C:\Users\Administrator\Desktop\workspace\git-clone\java-jenkins\target\classes started by Administrator in C:\Users\Administrator\Desktop\workspace\git-clone\java-jenkins)
+2021-07-08 13:03:46.147  INFO 5868 --- [main] c.z.j.j.JavaJenkinsApplication           : No active profile set, falling back to default profiles: default
+2021-07-08 13:03:48.531  INFO 5868 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 3338 (http)
+2021-07-08 13:03:48.556  INFO 5868 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-08 13:03:48.557  INFO 5868 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-07-08 13:03:48.852  INFO 5868 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-08 13:03:48.853  INFO 5868 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2595 ms
+2021-07-08 13:03:50.174  INFO 5868 --- [main] atisPlusConfig$$EnhancerBySpringCGLIB$$1 : loading mybatisPlusConfig ......
+2021-07-08 13:03:52.406  INFO 5868 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 45750285-ed24-4712-b963-4cdba06416cc
+
+2021-07-08 13:03:52.649  INFO 5868 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2a7ebe07, org.springframework.security.web.context.SecurityContextPersistenceFilter@bd4ee01, org.springframework.security.web.header.HeaderWriterFilter@56835f2f, org.springframework.security.web.authentication.logout.LogoutFilter@d62472f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@598657cd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2321e482, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6e93b0e7, org.springframework.security.web.session.SessionManagementFilter@39ace1a7, org.springframework.security.web.access.ExceptionTranslationFilter@60a01cb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6133e20b]
+2021-07-08 13:03:53.012  INFO 5868 --- [main] ginInterceptor$$EnhancerBySpringCGLIB$$1 : load LoginInterceptor ...
+2021-07-08 13:03:53.282  INFO 5868 --- [main] com.zaxxer.hikari.HikariDataSource       : Jenkins - Starting...
+2021-07-08 13:03:54.636  INFO 5868 --- [main] com.zaxxer.hikari.HikariDataSource       : Jenkins - Start completed.
+2021-07-08 13:03:54.774  INFO 5868 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 3338 (http) with context path ''
+2021-07-08 13:03:54.865  INFO 5868 --- [main] c.z.j.j.JavaJenkinsApplication           : Started JavaJenkinsApplication in 10.023 seconds (JVM running for 16.26)
+2021-07-08 13:08:33.869  INFO 4788 --- [main] c.z.j.j.JavaJenkinsApplication           : Starting JavaJenkinsApplication using Java 1.8.0_191 on SC-201811221926 with PID 4788 (C:\Users\Administrator\Desktop\workspace\git-clone\java-jenkins\target\classes started by Administrator in C:\Users\Administrator\Desktop\workspace\git-clone\java-jenkins)
+2021-07-08 13:08:33.872  INFO 4788 --- [main] c.z.j.j.JavaJenkinsApplication           : No active profile set, falling back to default profiles: default
+2021-07-08 13:08:36.126  INFO 4788 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 3338 (http)
+2021-07-08 13:08:36.159  INFO 4788 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-08 13:08:36.161  INFO 4788 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-07-08 13:08:36.416  INFO 4788 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-08 13:08:36.416  INFO 4788 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2457 ms
+2021-07-08 13:08:37.029  INFO 4788 --- [main] atisPlusConfig$$EnhancerBySpringCGLIB$$1 : loading mybatisPlusConfig ......
+2021-07-08 13:08:38.571  INFO 4788 --- [main] ginInterceptor$$EnhancerBySpringCGLIB$$1 : load LoginInterceptor ...
+2021-07-08 13:08:38.757  INFO 4788 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: a8c35f48-5dee-4fc1-af83-479c83dec6e4
+
+2021-07-08 13:08:38.881  INFO 4788 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4945cd1f, org.springframework.security.web.context.SecurityContextPersistenceFilter@2c64ee53, org.springframework.security.web.header.HeaderWriterFilter@7f289126, org.springframework.security.web.authentication.logout.LogoutFilter@50177966, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@162c89ac, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@41413c5a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2dbfcbe4, org.springframework.security.web.session.SessionManagementFilter@8fd3eee, org.springframework.security.web.access.ExceptionTranslationFilter@35800dea, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3fb54673]
+2021-07-08 13:08:38.924  INFO 4788 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-07-08 13:08:39.202  INFO 4788 --- [main] com.zaxxer.hikari.HikariDataSource       : Jenkins - Starting...
+2021-07-08 13:08:41.094  INFO 4788 --- [main] com.zaxxer.hikari.HikariDataSource       : Jenkins - Start completed.
+2021-07-08 13:08:41.260  INFO 4788 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 3338 (http) with context path ''
+2021-07-08 13:08:41.262  INFO 4788 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-07-08 13:08:41.325  INFO 4788 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-07-08 13:08:41.410  INFO 4788 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-07-08 13:08:41.743  INFO 4788 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createUsingPOST_1
+2021-07-08 13:08:41.745  INFO 4788 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: detailUsingPOST_1
+2021-07-08 13:08:41.927  INFO 4788 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: indexUsingPOST_1
+2021-07-08 13:08:41.929  INFO 4788 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: removeUsingPOST_1
+2021-07-08 13:08:41.931  INFO 4788 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
+2021-07-08 13:08:41.938  INFO 4788 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createUsingPOST_2
+2021-07-08 13:08:41.940  INFO 4788 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: detailUsingPOST_2
+2021-07-08 13:08:41.945  INFO 4788 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: indexUsingPOST_2
+2021-07-08 13:08:41.947  INFO 4788 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: removeUsingPOST_2
+2021-07-08 13:08:41.950  INFO 4788 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_2
+2021-07-08 13:08:41.988  INFO 4788 --- [main] c.z.j.j.JavaJenkinsApplication           : Started JavaJenkinsApplication in 9.076 seconds (JVM running for 13.658)
+2021-07-08 13:12:56.393  INFO 856 --- [main] c.z.j.j.JavaJenkinsApplication           : Starting JavaJenkinsApplication using Java 1.8.0_191 on SC-201811221926 with PID 856 (C:\Users\Administrator\Desktop\workspace\git-clone\java-jenkins\target\classes started by Administrator in C:\Users\Administrator\Desktop\workspace\git-clone\java-jenkins)
+2021-07-08 13:12:56.396  INFO 856 --- [main] c.z.j.j.JavaJenkinsApplication           : No active profile set, falling back to default profiles: default
+2021-07-08 13:12:59.032  INFO 856 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 3338 (http)
+2021-07-08 13:12:59.062  INFO 856 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-08 13:12:59.064  INFO 856 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-07-08 13:12:59.400  INFO 856 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-08 13:12:59.400  INFO 856 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2873 ms
+2021-07-08 13:12:59.970  INFO 856 --- [main] atisPlusConfig$$EnhancerBySpringCGLIB$$1 : loading mybatisPlusConfig ......
+2021-07-08 13:13:01.239  INFO 856 --- [main] ginInterceptor$$EnhancerBySpringCGLIB$$1 : load LoginInterceptor ...
+2021-07-08 13:13:01.415  INFO 856 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: acc188b2-f165-4895-8f69-918459b47ea2
+
+2021-07-08 13:13:01.535  INFO 856 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3815a7d1, org.springframework.security.web.context.SecurityContextPersistenceFilter@484302ee, org.springframework.security.web.header.HeaderWriterFilter@112530c3, org.springframework.security.web.authentication.logout.LogoutFilter@41f40dfa, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@778197c0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1f4dd016, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@24dc150c, org.springframework.security.web.session.SessionManagementFilter@3eb0fd88, org.springframework.security.web.access.ExceptionTranslationFilter@1c135f63, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7809b43a]
+2021-07-08 13:13:01.559  INFO 856 --- [main] c.z.j.j.common.config.SwaggerConfig      : xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2021-07-08 13:13:01.592  INFO 856 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-07-08 13:13:01.839  INFO 856 --- [main] com.zaxxer.hikari.HikariDataSource       : Jenkins - Starting...
+2021-07-08 13:13:02.751  INFO 856 --- [main] com.zaxxer.hikari.HikariDataSource       : Jenkins - Start completed.
+2021-07-08 13:13:02.857  INFO 856 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 3338 (http) with context path ''
+2021-07-08 13:13:02.859  INFO 856 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-07-08 13:13:02.882  INFO 856 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-07-08 13:13:02.924  INFO 856 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-07-08 13:13:03.199  INFO 856 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createUsingPOST_1
+2021-07-08 13:13:03.202  INFO 856 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: detailUsingPOST_1
+2021-07-08 13:13:03.338  INFO 856 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: indexUsingPOST_1
+2021-07-08 13:13:03.339  INFO 856 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: removeUsingPOST_1
+2021-07-08 13:13:03.341  INFO 856 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
+2021-07-08 13:13:03.348  INFO 856 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createUsingPOST_2
+2021-07-08 13:13:03.349  INFO 856 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: detailUsingPOST_2
+2021-07-08 13:13:03.353  INFO 856 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: indexUsingPOST_2
+2021-07-08 13:13:03.355  INFO 856 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: removeUsingPOST_2
+2021-07-08 13:13:03.358  INFO 856 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_2
+2021-07-08 13:13:03.382  INFO 856 --- [main] c.z.j.j.JavaJenkinsApplication           : Started JavaJenkinsApplication in 8.203 seconds (JVM running for 13.358)
+2021-07-08 13:15:32.772  WARN 856 --- [rebel-change-detector-thread] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.zhongcheng.jenkins.javajenkins.dao.mapper]' package. Please check your configuration.
+2021-07-08 13:15:33.102  INFO 856 --- [rebel-change-detector-thread] c.z.j.j.common.config.SwaggerConfig      : xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2021-07-08 13:15:49.855  INFO 13216 --- [main] c.z.j.j.JavaJenkinsApplication           : Starting JavaJenkinsApplication using Java 1.8.0_191 on SC-201811221926 with PID 13216 (C:\Users\Administrator\Desktop\workspace\git-clone\java-jenkins\target\classes started by Administrator in C:\Users\Administrator\Desktop\workspace\git-clone\java-jenkins)
+2021-07-08 13:15:49.861  INFO 13216 --- [main] c.z.j.j.JavaJenkinsApplication           : No active profile set, falling back to default profiles: default
+2021-07-08 13:15:53.369  INFO 13216 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 3338 (http)
+2021-07-08 13:15:53.407  INFO 13216 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-08 13:15:53.408  INFO 13216 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-07-08 13:15:53.707  INFO 13216 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-08 13:15:53.707  INFO 13216 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3735 ms
+2021-07-08 13:15:54.551  INFO 13216 --- [main] atisPlusConfig$$EnhancerBySpringCGLIB$$1 : loading mybatisPlusConfig ......
+2021-07-08 13:15:56.317  INFO 13216 --- [main] ginInterceptor$$EnhancerBySpringCGLIB$$1 : load LoginInterceptor ...
+2021-07-08 13:15:56.503  INFO 13216 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 07f72024-0639-42b7-a19b-39972ad3a6a9
+
+2021-07-08 13:15:56.629  INFO 13216 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@598e5cb8, org.springframework.security.web.context.SecurityContextPersistenceFilter@5be69f7e, org.springframework.security.web.header.HeaderWriterFilter@2419fe6f, org.springframework.security.web.authentication.logout.LogoutFilter@163df259, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@16d61071, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1aa59698, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@199806aa, org.springframework.security.web.session.SessionManagementFilter@5c25daad, org.springframework.security.web.access.ExceptionTranslationFilter@65ad2b42, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@20a946d9]
+2021-07-08 13:15:56.673  INFO 13216 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-07-08 13:15:56.681  INFO 13216 --- [main] c.z.j.j.common.config.SwaggerConfig      : xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2021-07-08 13:15:56.988  INFO 13216 --- [main] com.zaxxer.hikari.HikariDataSource       : Jenkins - Starting...
+2021-07-08 13:15:57.806  INFO 13216 --- [main] com.zaxxer.hikari.HikariDataSource       : Jenkins - Start completed.
+2021-07-08 13:15:57.980  INFO 13216 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 3338 (http) with context path ''
+2021-07-08 13:15:57.984  INFO 13216 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-07-08 13:15:58.013  INFO 13216 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-07-08 13:15:58.068  INFO 13216 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-07-08 13:15:58.364  INFO 13216 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createUsingPOST_1
+2021-07-08 13:15:58.370  INFO 13216 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: detailUsingPOST_1
+2021-07-08 13:15:58.526  INFO 13216 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: indexUsingPOST_1
+2021-07-08 13:15:58.528  INFO 13216 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: removeUsingPOST_1
+2021-07-08 13:15:58.529  INFO 13216 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
+2021-07-08 13:15:58.538  INFO 13216 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createUsingPOST_2
+2021-07-08 13:15:58.539  INFO 13216 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: detailUsingPOST_2
+2021-07-08 13:15:58.544  INFO 13216 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: indexUsingPOST_2
+2021-07-08 13:15:58.546  INFO 13216 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: removeUsingPOST_2
+2021-07-08 13:15:58.551  INFO 13216 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_2
+2021-07-08 13:15:58.580  INFO 13216 --- [main] c.z.j.j.JavaJenkinsApplication           : Started JavaJenkinsApplication in 10.643 seconds (JVM running for 17.194)
+2021-07-08 13:26:39.874  INFO 1808 --- [main] c.z.j.j.JavaJenkinsApplication           : Starting JavaJenkinsApplication using Java 1.8.0_191 on SC-201811221926 with PID 1808 (C:\Users\Administrator\Desktop\workspace\git-clone\java-jenkins\target\classes started by Administrator in C:\Users\Administrator\Desktop\workspace\git-clone\java-jenkins)
+2021-07-08 13:26:39.878  INFO 1808 --- [main] c.z.j.j.JavaJenkinsApplication           : No active profile set, falling back to default profiles: default
+2021-07-08 13:26:41.896  INFO 1808 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 3338 (http)
+2021-07-08 13:26:41.910  INFO 1808 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-08 13:26:41.910  INFO 1808 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-07-08 13:26:42.068  INFO 1808 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-08 13:26:42.069  INFO 1808 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2103 ms
+2021-07-08 13:26:42.690  INFO 1808 --- [main] atisPlusConfig$$EnhancerBySpringCGLIB$$1 : loading mybatisPlusConfig ......
+2021-07-08 13:26:44.206  INFO 1808 --- [main] ginInterceptor$$EnhancerBySpringCGLIB$$1 : load LoginInterceptor ...
+2021-07-08 13:26:44.379  INFO 1808 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 28f8b951-5d17-41b2-879f-74549b6be5ce
+
+2021-07-08 13:26:44.505  INFO 1808 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@413eaf5d, org.springframework.security.web.context.SecurityContextPersistenceFilter@3a751535, org.springframework.security.web.header.HeaderWriterFilter@174e1b99, org.springframework.security.web.authentication.logout.LogoutFilter@41e7a544, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2f166d61, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1fe05fff, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3e28af44, org.springframework.security.web.session.SessionManagementFilter@546083d6, org.springframework.security.web.access.ExceptionTranslationFilter@5960f17, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@27fc0217]
+2021-07-08 13:26:44.555  INFO 1808 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-07-08 13:26:44.562  INFO 1808 --- [main] c.z.j.j.common.config.SwaggerConfig      : xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2021-07-08 13:26:44.916  INFO 1808 --- [main] com.zaxxer.hikari.HikariDataSource       : Jenkins - Starting...
+2021-07-08 13:26:45.909  INFO 1808 --- [main] com.zaxxer.hikari.HikariDataSource       : Jenkins - Start completed.
+2021-07-08 13:26:46.020  INFO 1808 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 3338 (http) with context path ''
+2021-07-08 13:26:46.022  INFO 1808 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-07-08 13:26:46.043  INFO 1808 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-07-08 13:26:46.089  INFO 1808 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-07-08 13:26:46.352  INFO 1808 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createUsingPOST_1
+2021-07-08 13:26:46.354  INFO 1808 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: detailUsingPOST_1
+2021-07-08 13:26:46.501  INFO 1808 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: indexUsingPOST_1
+2021-07-08 13:26:46.502  INFO 1808 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: removeUsingPOST_1
+2021-07-08 13:26:46.503  INFO 1808 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_1
+2021-07-08 13:26:46.509  INFO 1808 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createUsingPOST_2
+2021-07-08 13:26:46.510  INFO 1808 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: detailUsingPOST_2
+2021-07-08 13:26:46.515  INFO 1808 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: indexUsingPOST_2
+2021-07-08 13:26:46.517  INFO 1808 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: removeUsingPOST_2
+2021-07-08 13:26:46.519  INFO 1808 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPOST_2
+2021-07-08 13:26:46.545  INFO 1808 --- [main] c.z.j.j.JavaJenkinsApplication           : Started JavaJenkinsApplication in 7.908 seconds (JVM running for 13.021)
+2021-07-08 13:28:28.958  INFO 1808 --- [http-nio-3338-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-08 13:28:28.958  INFO 1808 --- [http-nio-3338-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-07-08 13:28:28.960  INFO 1808 --- [http-nio-3338-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-07-08 13:28:29.870  INFO 1808 --- [http-nio-3338-exec-1] c.z.j.j.controller.LoginController       : login successful!
+2021-07-08 13:28:30.866  INFO 1808 --- [http-nio-3338-exec-2] c.z.j.j.c.interceptor.AuthInterceptor    : AuthInterceptor is running ...
+2021-07-08 13:29:13.078  INFO 1808 --- [http-nio-3338-exec-3] c.z.j.j.c.interceptor.AuthInterceptor    : AuthInterceptor is running ...
+2021-07-08 13:32:34.194  INFO 1808 --- [http-nio-3338-exec-4] c.z.j.j.c.interceptor.AuthInterceptor    : AuthInterceptor is running ...
+2021-07-08 13:32:49.044  INFO 1808 --- [http-nio-3338-exec-6] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x020x000x010x000x010xfc0x030x030xd3-0xbbNP0x1fa0x8c0xae0xdd0xf30xe60xef0xbe0x1f{0xa10x980x17^0x1fh0xb1]0xa70xd2ZJi00xdd0xd8 ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:417)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:261)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2021-07-08 13:32:49.044  INFO 1808 --- [http-nio-3338-exec-5] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x020x000x010x000x010xfc0x030x030x0b)0xaa0xcf0xb40x9ckUn0xce@0xe9|e0x8aS0x80+]R0xc70xbf0x9c0xc3Oha0xa5}0xa3e0xe3 ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:417)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:261)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2021-07-08 13:32:57.363  INFO 1808 --- [http-nio-3338-exec-8] c.z.j.j.c.interceptor.AuthInterceptor    : AuthInterceptor is running ...
+2021-07-08 13:32:57.498  INFO 1808 --- [http-nio-3338-exec-10] c.z.j.j.c.interceptor.AuthInterceptor    : AuthInterceptor is running ...
+2021-07-08 13:32:57.510  INFO 1808 --- [http-nio-3338-exec-10] c.z.j.j.c.interceptor.AuthInterceptor    : AuthInterceptor is running ...
+2021-07-08 13:33:02.704  INFO 1808 --- [http-nio-3338-exec-1] c.z.j.j.c.interceptor.AuthInterceptor    : AuthInterceptor is running ...
+2021-07-08 13:35:50.743  INFO 1808 --- [http-nio-3338-exec-10] c.z.j.j.c.interceptor.AuthInterceptor    : AuthInterceptor is running ...
+2021-07-08 13:35:51.032  INFO 1808 --- [http-nio-3338-exec-1] c.z.j.j.c.interceptor.AuthInterceptor    : AuthInterceptor is running ...
+2021-07-08 13:35:51.024  INFO 1808 --- [http-nio-3338-exec-3] c.z.j.j.c.interceptor.AuthInterceptor    : AuthInterceptor is running ...
+2021-07-08 13:35:51.022  INFO 1808 --- [http-nio-3338-exec-2] c.z.j.j.c.interceptor.AuthInterceptor    : AuthInterceptor is running ...
+2021-07-08 13:35:51.023  INFO 1808 --- [http-nio-3338-exec-4] c.z.j.j.c.interceptor.AuthInterceptor    : AuthInterceptor is running ...
+2021-07-08 13:35:51.214  INFO 1808 --- [http-nio-3338-exec-5] c.z.j.j.c.interceptor.AuthInterceptor    : AuthInterceptor is running ...
+2021-07-08 13:35:51.264  INFO 1808 --- [http-nio-3338-exec-9] c.z.j.j.c.interceptor.AuthInterceptor    : AuthInterceptor is running ...
+2021-07-08 13:35:51.325  INFO 1808 --- [http-nio-3338-exec-7] c.z.j.j.c.interceptor.AuthInterceptor    : AuthInterceptor is running ...
+2021-07-08 13:35:51.327  INFO 1808 --- [http-nio-3338-exec-7] c.z.j.j.c.interceptor.AuthInterceptor    : AuthInterceptor is running ...
+2021-07-08 13:35:51.341  INFO 1808 --- [http-nio-3338-exec-6] c.z.j.j.c.interceptor.AuthInterceptor    : AuthInterceptor is running ...
+2021-07-08 13:35:51.371  INFO 1808 --- [http-nio-3338-exec-10] c.z.j.j.c.interceptor.AuthInterceptor    : AuthInterceptor is running ...
+2021-07-08 13:35:51.393  INFO 1808 --- [http-nio-3338-exec-10] c.z.j.j.c.interceptor.AuthInterceptor    : AuthInterceptor is running ...
+2021-07-08 13:35:51.869  INFO 1808 --- [http-nio-3338-exec-2] c.z.j.j.c.interceptor.AuthInterceptor    : AuthInterceptor is running ...
+2021-07-08 13:35:51.869  INFO 1808 --- [http-nio-3338-exec-4] c.z.j.j.c.interceptor.AuthInterceptor    : AuthInterceptor is running ...
+2021-07-08 13:35:51.872  INFO 1808 --- [http-nio-3338-exec-3] c.z.j.j.c.interceptor.AuthInterceptor    : AuthInterceptor is running ...
+2021-07-08 13:36:03.840  INFO 1808 --- [http-nio-3338-exec-8] c.z.j.j.c.interceptor.AuthInterceptor    : AuthInterceptor is running ...
+2021-07-08 13:36:04.040  INFO 1808 --- [http-nio-3338-exec-3] c.z.j.j.c.interceptor.AuthInterceptor    : AuthInterceptor is running ...
+2021-07-08 13:36:04.036  INFO 1808 --- [http-nio-3338-exec-4] c.z.j.j.c.interceptor.AuthInterceptor    : AuthInterceptor is running ...
+2021-07-08 13:36:04.037  INFO 1808 --- [http-nio-3338-exec-2] c.z.j.j.c.interceptor.AuthInterceptor    : AuthInterceptor is running ...
+2021-07-08 13:36:04.172  INFO 1808 --- [http-nio-3338-exec-1] c.z.j.j.c.interceptor.AuthInterceptor    : AuthInterceptor is running ...
+2021-07-08 13:36:04.244  INFO 1808 --- [http-nio-3338-exec-5] c.z.j.j.c.interceptor.AuthInterceptor    : AuthInterceptor is running ...
+2021-07-08 13:36:04.327  INFO 1808 --- [http-nio-3338-exec-10] c.z.j.j.c.interceptor.AuthInterceptor    : AuthInterceptor is running ...
+2021-07-08 13:36:04.329  INFO 1808 --- [http-nio-3338-exec-10] c.z.j.j.c.interceptor.AuthInterceptor    : AuthInterceptor is running ...
+2021-07-08 13:36:04.336  INFO 1808 --- [http-nio-3338-exec-6] c.z.j.j.c.interceptor.AuthInterceptor    : AuthInterceptor is running ...
+2021-07-08 13:36:04.344  INFO 1808 --- [http-nio-3338-exec-7] c.z.j.j.c.interceptor.AuthInterceptor    : AuthInterceptor is running ...
+2021-07-08 13:36:04.347  INFO 1808 --- [http-nio-3338-exec-7] c.z.j.j.c.interceptor.AuthInterceptor    : AuthInterceptor is running ...
+2021-07-08 13:36:04.502  INFO 1808 --- [http-nio-3338-exec-8] c.z.j.j.c.interceptor.AuthInterceptor    : AuthInterceptor is running ...
+2021-07-08 13:36:04.502  INFO 1808 --- [http-nio-3338-exec-2] c.z.j.j.c.interceptor.AuthInterceptor    : AuthInterceptor is running ...
+2021-07-08 13:36:04.502  INFO 1808 --- [http-nio-3338-exec-3] c.z.j.j.c.interceptor.AuthInterceptor    : AuthInterceptor is running ...
+2021-07-08 13:36:15.401  INFO 1808 --- [http-nio-3338-exec-1] c.z.j.j.c.interceptor.AuthInterceptor    : AuthInterceptor is running ...
+2021-07-08 13:36:17.139  INFO 1808 --- [http-nio-3338-exec-4] c.z.j.j.c.interceptor.AuthInterceptor    : AuthInterceptor is running ...

@@ -4,7 +4,6 @@ package com.zhongcheng.jenkins.javajenkins;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.web.servlet.ServletComponentScan;
 
 @MapperScan(basePackages = "com.zhongcheng.jenkins.javajenkins.dao.mapper")
 @SpringBootApplication

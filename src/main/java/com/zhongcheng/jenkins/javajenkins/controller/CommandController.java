@@ -4,11 +4,13 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.zhongcheng.jenkins.javajenkins.common.exception.BaseException;
 import com.zhongcheng.jenkins.javajenkins.dao.entity.Command;
 import com.zhongcheng.jenkins.javajenkins.dao.entity.Pages;
-import com.zhongcheng.jenkins.javajenkins.dao.entity.Response;
 import com.zhongcheng.jenkins.javajenkins.model.CommonResult;
+import com.zhongcheng.jenkins.javajenkins.model.dto.req.AddAndUpdateCommandDto;
+import com.zhongcheng.jenkins.javajenkins.model.dto.req.DeleteAndDetailDto;
+import com.zhongcheng.jenkins.javajenkins.model.dto.req.PageResponseDto;
 import com.zhongcheng.jenkins.javajenkins.service.CommandService;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.springframework.beans.BeanUtils;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.method.annotation.SseEmitter;
 import javax.annotation.Resource;
@@ -21,11 +23,11 @@ import static com.zhongcheng.jenkins.javajenkins.model.ErrorEnum.FAIL;
 public class CommandController {
     @Resource
     private CommandService commandService;
-    final Logger logger = LoggerFactory.getLogger(getClass());
 
     @RequestMapping(value = "/api/admin/command/create",method = RequestMethod.POST)
-    public CommonResult<Object> create (@RequestBody Command command) {
-        logger.info("result is ready ... ");
+    public CommonResult<Command> create (@RequestBody @Validated AddAndUpdateCommandDto dto) {
+        Command command = new Command();
+        BeanUtils.copyProperties(dto, command);
         boolean result = commandService.save(command);
         if (!result) {
             throw new BaseException(FAIL);
@@ -34,18 +36,19 @@ public class CommandController {
     }
 
     @RequestMapping(value = "/api/admin/command/update",method = RequestMethod.POST)
-    public CommonResult<Object> update (@RequestBody Command command) {
+    public CommonResult<Command> update (@RequestBody @Validated AddAndUpdateCommandDto dto) {
+        Command command = new Command();
+        BeanUtils.copyProperties(dto, command);
         boolean result = commandService.updateById(command);
         if (!result) {
             throw new BaseException(FAIL);
         }
-        return CommonResult.success(command.getId());
+        return CommonResult.success(command);
     }
 
     @RequestMapping(value = "/api/admin/command/detail",method = RequestMethod.POST)
-    public CommonResult<Object> detail (@RequestBody Map<String, String> map) {
-        String commandId = map.get("id");
-        Command result = commandService.getById(commandId);
+    public CommonResult<Command> detail (@RequestBody @Validated DeleteAndDetailDto dto) {
+        Command result = commandService.getById(dto.getId());
         if (result == null) {
             throw new BaseException(FAIL);
         }
@@ -53,17 +56,16 @@ public class CommandController {
     }
 
     @RequestMapping(value = "/api/admin/command/remove",method = RequestMethod.POST)
-    public CommonResult<Object> remove (@RequestBody Map<String, String> map) {
-        String commandId = map.get("id");
-        boolean result = commandService.removeById(commandId);
+    public CommonResult<Long> remove (@RequestBody @Validated DeleteAndDetailDto dto) {
+        boolean result = commandService.removeById(dto.getId());
         if (!result) {
             throw new BaseException(FAIL);
         }
-        return CommonResult.success(commandId);
+        return CommonResult.success(dto.getId());
     }
 
     @RequestMapping(value = "/api/admin/command/search",method = RequestMethod.POST)
-    public CommonResult<Object> index (@RequestBody Response<Map<String, String>> res) {
+    public CommonResult<Pages<Command>> index (@RequestBody @Validated PageResponseDto<Map<String, String>> res) {
         //获取前台发送过来的数据
         Common<Command> common = new Common<>();
         IPage<Command> page = common.getPage(res);

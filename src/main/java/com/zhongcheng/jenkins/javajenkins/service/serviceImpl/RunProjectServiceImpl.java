@@ -1,8 +1,10 @@
 package com.zhongcheng.jenkins.javajenkins.service.serviceImpl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.zhongcheng.jenkins.javajenkins.common.exception.BaseException;
 import com.zhongcheng.jenkins.javajenkins.dao.entity.Command;
 import com.zhongcheng.jenkins.javajenkins.dao.mapper.CommandMapper;
+import com.zhongcheng.jenkins.javajenkins.model.ErrorEnum;
 import com.zhongcheng.jenkins.javajenkins.service.RunProjectService;
 import org.springframework.stereotype.Service;
 import org.springframework.web.servlet.mvc.method.annotation.SseEmitter;
@@ -31,7 +33,7 @@ public class RunProjectServiceImpl extends ServiceImpl<CommandMapper, Command> i
                 Common.send(child.getErrorStream(),"stderr", sseEmitter);
                 sseEmitter.send(SseEmitter.event().name("close").data(Common.format("close:" + code)));
             } catch (IOException | InterruptedException e) {
-                e.printStackTrace();
+                throw new BaseException(ErrorEnum.IO_ERROR);
             }
             sseEmitter.complete();
         }).start();

@@ -5,10 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
-import java.util.Date;
-
 @Data
-@AllArgsConstructor
 @TableName("Command")
 @EqualsAndHashCode(callSuper=true)
 public class Command extends BaseEntity {

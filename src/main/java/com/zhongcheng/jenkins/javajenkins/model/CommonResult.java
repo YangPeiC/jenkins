@@ -1,6 +1,5 @@
 package com.zhongcheng.jenkins.javajenkins.model;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class CommonResult<T> {
     private Integer err_code;

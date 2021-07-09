@@ -8,6 +8,7 @@ public enum ErrorEnum {
     FAIL(-1,"发生错误了！"),
     OK(0,"ok！"),
     DetailNotExists(4, "该详细信息不存在"),
+    IO_ERROR(8, "IO出错了"),
 
     // 用户系统
     USER_PHONE_EXISTS(101, "电话号码已存在"),

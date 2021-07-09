@@ -7,12 +7,14 @@ import com.zhongcheng.jenkins.javajenkins.common.exception.InvalidVerifyCode;
 import com.zhongcheng.jenkins.javajenkins.dao.entity.User;
 import com.zhongcheng.jenkins.javajenkins.dao.mapper.UserMapper;
 import com.zhongcheng.jenkins.javajenkins.service.LoginService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import java.util.HashMap;
 
+@Slf4j
 @Service
 public class LoginServiceImpl extends ServiceImpl<UserMapper, User> implements LoginService {
     @Resource
@@ -34,8 +36,8 @@ public class LoginServiceImpl extends ServiceImpl<UserMapper, User> implements L
         dest = dest.substring(key.length()); //去除前缀
         //添加判断Map
         HashMap<String, Boolean> handler = new HashMap<>();
-        handler.put("{noop}", pwd.equals(dest));
-        handler.put("{bcrypt}", passwordEncoder.matches(pwd, dest));
+        handler.put("{noop}", !pwd.equals(dest));
+        handler.put("{bcrypt}", !passwordEncoder.matches(pwd, dest));
         return handler.get(key);  //对应类型密码是否正确
     }
     public User login(Object account, Object passwd) {
@@ -45,7 +47,7 @@ public class LoginServiceImpl extends ServiceImpl<UserMapper, User> implements L
         if (user == null) {
             throw new InvalidUser("无效的用户");
         }
-        if (isTruePasswd(user.getPasswd(), (String) passwd)) {
+        else if (isTruePasswd(user.getPasswd(), (String) passwd)) {
             throw new InvalidVerifyCode();
         }
         return user;

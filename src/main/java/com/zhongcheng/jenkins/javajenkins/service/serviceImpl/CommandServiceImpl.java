@@ -3,10 +3,12 @@ package com.zhongcheng.jenkins.javajenkins.service.serviceImpl;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.zhongcheng.jenkins.javajenkins.common.exception.BaseException;
 import com.zhongcheng.jenkins.javajenkins.dao.entity.Command;
 import com.zhongcheng.jenkins.javajenkins.dao.entity.Pages;
-import com.zhongcheng.jenkins.javajenkins.dao.entity.Response;
 import com.zhongcheng.jenkins.javajenkins.dao.mapper.CommandMapper;
+import com.zhongcheng.jenkins.javajenkins.model.ErrorEnum;
+import com.zhongcheng.jenkins.javajenkins.model.dto.req.PageResponseDto;
 import com.zhongcheng.jenkins.javajenkins.service.CommandService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -23,7 +25,7 @@ public class CommandServiceImpl extends ServiceImpl<CommandMapper, Command> impl
     private CommandService commandService;
     final Logger logger = LoggerFactory.getLogger(getClass());
 
-    public Pages<Command> findList (IPage<Command> page, Response<Map<String, String>> res) {
+    public Pages<Command> findList (IPage<Command> page, PageResponseDto<Map<String, String>> res) {
         Common<Command> common= new Common<>();
         QueryWrapper<Command> wrapper = common.pageFilter(res);
         IPage<Command> commandPage = commandService.page(page, wrapper); //有条件分页
@@ -52,7 +54,7 @@ public class CommandServiceImpl extends ServiceImpl<CommandMapper, Command> impl
                 Common.send(child.getErrorStream(),"stderr", sseEmitter);
                 sseEmitter.send(SseEmitter.event().name("close").data(Common.format("close:" + code)));
             } catch (IOException | InterruptedException e) {
-                e.printStackTrace();
+                throw new BaseException(ErrorEnum.IO_ERROR);
             }
             sseEmitter.complete();
         }).start();

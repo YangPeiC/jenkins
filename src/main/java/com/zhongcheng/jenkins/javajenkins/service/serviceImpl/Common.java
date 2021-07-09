@@ -1,7 +1,9 @@
 package com.zhongcheng.jenkins.javajenkins.service.serviceImpl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.zhongcheng.jenkins.javajenkins.dao.entity.Response;
+import com.zhongcheng.jenkins.javajenkins.common.exception.BaseException;
+import com.zhongcheng.jenkins.javajenkins.model.ErrorEnum;
+import com.zhongcheng.jenkins.javajenkins.model.dto.req.PageResponseDto;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.servlet.mvc.method.annotation.SseEmitter;
 
@@ -14,7 +16,7 @@ public class Common<T> {
     /**
      * 设置分页查找的筛选条件
      */
-    public QueryWrapper<T> pageFilter (Response<java.util.Map<String, String>> obj) {
+    public QueryWrapper<T> pageFilter (PageResponseDto<Map<String, String>> obj) {
         QueryWrapper<T> wrapper = new QueryWrapper<>();
         List<java.util.Map<String, String>> list = obj.getFilter();
         if (list.size() == 0) {
@@ -70,17 +72,14 @@ public class Common<T> {
      * 读取InputStream，读取255个字符，转化为String，sse输出内容
      */
     public static void send(InputStream input, String event, SseEmitter sse){
-        Reader reader = null;
+        Reader reader;
         try {
             reader = new InputStreamReader(input, "GBK");
         } catch (UnsupportedEncodingException e) {
-            e.printStackTrace();
+            throw new BaseException(ErrorEnum.IO_ERROR);
         }
         while (true) {
             try {
-                if (reader == null) {
-                    break;
-                }
                 char [] buff = new char[255]; //缓存大小
                 int length = reader.read(buff);
                 sse.send(SseEmitter.event().name(event).data(format("" + String.valueOf(buff))));
@@ -88,7 +87,7 @@ public class Common<T> {
                     break;
                 }
             } catch (IOException | NullPointerException e) {
-                e.printStackTrace();
+                throw new BaseException(ErrorEnum.IO_ERROR);
             }
         }
     }

@@ -6,10 +6,12 @@ import cn.hutool.poi.excel.ExcelWriter;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.zhongcheng.jenkins.javajenkins.common.exception.BaseException;
 import com.zhongcheng.jenkins.javajenkins.dao.entity.Pages;
 import com.zhongcheng.jenkins.javajenkins.dao.entity.Project;
-import com.zhongcheng.jenkins.javajenkins.dao.entity.Response;
 import com.zhongcheng.jenkins.javajenkins.dao.mapper.ProjectMapper;
+import com.zhongcheng.jenkins.javajenkins.model.ErrorEnum;
+import com.zhongcheng.jenkins.javajenkins.model.dto.req.PageResponseDto;
 import com.zhongcheng.jenkins.javajenkins.service.ProjectService;
 import org.springframework.stereotype.Service;
 import org.springframework.util.ResourceUtils;
@@ -27,7 +29,7 @@ public class ProjectServiceImpl extends ServiceImpl<ProjectMapper, Project> impl
     @Resource
     private ProjectService projectService;
 
-    public Pages<Project> findList(IPage<Project> page, Response<Map<String, String>> res) {
+    public Pages<Project> findList(IPage<Project> page, PageResponseDto<Map<String, String>> res) {
         Common<Project> common = new Common<>();
         QueryWrapper<Project> wrapper = common.pageFilter(res);
         IPage<Project> projectPage = projectService.page(page, wrapper);
@@ -49,11 +51,11 @@ public class ProjectServiceImpl extends ServiceImpl<ProjectMapper, Project> impl
      */
     public Boolean imports(HttpServletRequest request, MultipartFile file) {
         List<Project> list = new ArrayList<>();
-        ByteArrayInputStream inputStream = null;
+        ByteArrayInputStream inputStream;
         try {
             inputStream = new ByteArrayInputStream(file.getBytes());
         } catch (IOException e) {
-            e.printStackTrace();
+            throw new BaseException(ErrorEnum.IO_ERROR);
         }
         ExcelReader reader = ExcelUtil.getReader(inputStream);
         List<Map<String, Object>> lists = reader.readAll();
@@ -69,12 +71,12 @@ public class ProjectServiceImpl extends ServiceImpl<ProjectMapper, Project> impl
 
     public ExcelWriter download() {
         File path;
-        String pathStr = "";
+        String pathStr;
         try {
             path = new File(ResourceUtils.getURL("classpath:").getPath());
             pathStr = path.getAbsolutePath();
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
+            throw new BaseException(ErrorEnum.IO_ERROR);
         }
         String replacePath = "\\src\\main\\resources\\static\\excel\\模板.xlsx";
         String realPath = pathStr.replace("\\target\\classes", replacePath);  //获取文件相对地址
